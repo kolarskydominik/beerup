@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+
+    <style>
+      .bento-item {
+        overflow: hidden;
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        background-color: gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid grid-cols-4 grid-rows-6 gap-2 h-[48rem] mx-6">
+      <div class="bento-item col-start-1 row-start-1 row-span-2 bg-primary px-6">
+        <h1 class="font-extrabold text-4xl text-primary-foreground break-words">The Purple Haze</h1>
+      </div>
+      <img
+        class="row-start-1 col-start-2 col-span-2 row-span-2 bento-item object-cover"
+        src="/pub-placeholder-img.jpg"
+        alt="pub" />
+      <img class="bento-item col-start-4 row-start-1 object-cover" src="/pub-placeholder-img.jpg" alt="pub" />
+      <img class="bento-item col-start-4 row-start-2 object-cover" src="/pub-placeholder-img.jpg" alt="pub" />
+      <div class="bento-item row-span-3 col-start-1 row-start-3 flex flex-col gap-2 justify-start items-center p-4">
+        <span class="font-bold text-xl">Otevírací doba</span>
+        <span>PO 13:00 - 17:00</span>
+        <span>ÚT 13:00 - 17:00</span>
+        <span>ST 13:00 - 17:00</span>
+        <span>ČT 13:00 - 17:00</span>
+        <span>PÁ 13:00 - 17:00</span>
+        <span>SO 13:00 - 17:00</span>
+        <span>NE 13:00 - 17:00</span>
+      </div>
+      <div class="bento-item col-start-1 row-start-6 flex-col gap-1 flex-wrap items-start justify-start p-4">
+        <span>Food</span>
+        <span>Bar</span>
+        <span>Life music</span>
+        <span>WiFi</span>
+        <span>Terrase</span>
+      </div>
+      <div class="bento-item row-span-2 col-span-2 row-start-3 col-start-2"></div>
+      <div class="bento-item row-span-2 col-span-2 row-start-5 col-start-2 grid grid-cols-2">
+        <div class="w-full h-full"><img class="object-contain" src="./pub-placeholder-img.png" /></div>
+        <div class="w-full h-full p-4 flex flex-col gap-2"><h2 class="text-lg font-bold">Radegast 12°</h2></div>
+      </div>
+      <div class="bento-item col-start-4 row-start-3 bg-primary flex-col text-primary-foreground gap-2">
+        <span class="font-extrabold text-3xl">🍺</span>
+        <span>5 hodnocení</span>
+      </div>
+      <div class="bento-item row-span-2 row-start-4 col-start-4">Map</div>
+      <div class="bento-item row-start-6 col-start-4"><span></span></div>
+    </div>
+  </body>
+</html>
